@@ -1,7 +1,7 @@
-# 🌿 Juego de Fracciones con Totoro
+# Juego de Fracciones con Totoro
 
 **Juego educativo web** desarrollado con Python y Flask. Diseñado para estudiantes de **3° y 4° grado de primaria**, usando una temática inspirada en *Totoro* para hacer más atractiva la enseñanza de **fracciones y operaciones matemáticas básicas**.
-## 🎯 Objetivo del Juego
+##  Objetivo del Juego
 
 Guiar a los niños a través de un recorrido divertido y visual por la "jungla del saber", resolviendo ejercicios con fracciones y operaciones como:
 
@@ -10,16 +10,16 @@ Guiar a los niños a través de un recorrido divertido y visual por la "jungla d
 - Comparación de fracciones
 - Juegos interactivos con feedback visual
 
-## 🖼️ Características
+##  Características
 
-- 🎮 Juego interactivo con interfaz animada
-- 🧠 Contenido dividido en niveles: fácil, intermedio, avanzado
-- 🐾 Personaje acompañante: Totoro
-- 🍃 Animaciones: caída de hojas, Totoro corriendo, etc.
-- 🧑‍🏫 Introducciones paso a paso
-- 📱 Adaptado para pantalla completa
+- Juego interactivo con interfaz animada
+- Contenido dividido en niveles: fácil, intermedio, avanzado
+- Personaje acompañante: Totoro
+- Animaciones: caída de hojas, Totoro corriendo, etc.
+- Introducciones paso a paso
+- Adaptado para pantalla completa
 
-## 🛠️ Tecnologías usadas
+## Tecnologías usadas
 
 - **Python** + **Flask**
 - **HTML5** / **CSS** / **JavaScript**
