@@ -24,5 +24,14 @@ Guiar a los niños a través de un recorrido divertido y visual por la "jungla d
 - **Python** + **Flask**
 - **HTML5** / **CSS** / **JavaScript**
 - Imágenes y gifs personalizados
-- Estructura modular con carpetas 
+- Estructura modular con carpetas
+
+  ##Activa un entorno virtual:
+  python -m venv venv
+# En Windows: venv\Scripts\activate
+##Instalar dependencias
+pip install flask
+##Ejecutar la aplicacion
+python app.py
+
 
