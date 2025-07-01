@@ -1,0 +1,60 @@
+body.menu-fondo {
+    background: url('../img/nivel.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.tarjeta {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 65px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 20px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.cuerpo img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.pie {
+    margin-top: 10px;
+}
+
+.pie a {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.pie a:hover {
+    background-color: #388E3C;
+}

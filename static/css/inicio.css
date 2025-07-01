@@ -1,0 +1,169 @@
+.hoja {
+    position: absolute;
+    width: 40px;
+    z-index: 0;
+    animation-name: caer;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.hoja1 {
+    left: 10%;
+    animation-duration: 6s;
+}
+
+.hoja2 {
+    left: 50%;
+    animation-duration: 8s;
+}
+
+.hoja3 {
+    left: 80%;
+    animation-duration: 7s;
+}
+
+@keyframes caer {
+    0% {
+        top: -100px;
+        transform: rotate(0deg);
+    }
+    100% {
+        top: 100vh;
+        transform: rotate(360deg);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/100.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(204, 23, 23, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+}
+
+.menu .logo {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu nav a.active {
+    border-bottom: 2px solid red;
+}
+
+.contenido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 60px;
+    gap: 50px;
+    position: relative;
+}
+
+.texto-central {
+    position: absolute;      /* Hace que el texto flote sobre el contenido */
+    top: 50%;                /* Centra verticalmente */
+    left: 75%;               /* Centra horizontalmente */
+    transform: translate(-90%, -50%); /* Ajusta el centro exacto */
+    z-index: 2;              /* Asegura que esté encima de la imagen */
+    text-align: center;
+    max-width: 500px;
+    width: 80%;
+}
+
+.texto-central .descripcion {
+    background: rgba(0, 100, 0, 0.8);
+    padding: 25px;
+    border-radius: 15px;
+    font-size: 28px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+}
+
+.jugar-btn {
+    display: inline-block;
+    background-color: orange;
+    padding: 15px 30px;
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.imagen-personaje img {
+    height: 250px;
+    margin-left: -300px;   /* mueve a la derecha */
+    margin-top: 180px;    /* mueve hacia abajo */
+}
+
+.imagen-personaje img {
+    height: 350px;
+}
+
+.flechas {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    pointer-events: none;
+}
+
+.flechas button {
+    background-color: orange;
+    border: none;
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: auto;
+}
+#totoro-corriendo {
+    position: absolute;
+    bottom: 40px;
+    left: -250px;
+    height: 200px;
+    display: none;
+    z-index: 10;
+    animation: correrTotoro 2.5s linear forwards;
+    transform: scaleX(-1); /* Voltea la imagen horizontalmente */
+}
+
+@keyframes correrTotoro {
+    0% {
+        left: -250px;
+    }
+    100% {
+        left: 120%;
+    }
+}

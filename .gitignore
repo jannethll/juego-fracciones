@@ -1,0 +1,10 @@
+#Este archivo le dice a Git qué NO debe subir (como el entorno virtual).
+
+
+venv/
+__pycache__/
+*.pyc
+*.log
+.env
+.DS_Store
+*.sqlite3

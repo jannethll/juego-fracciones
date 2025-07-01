@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inicio.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/estile.css') }}">
+</head>
+<body class="intro-fondo">
+    <div class="intro-container">
+        <div class="intro-card">
+        <h1>¡Aprendamos Matemáticas Básicas!</h1>
+<img src="{{ url_for('static', filename='img/IMG/Introduccion/1/operaciones.jpeg') }}" alt="...">
+        <br>
+        <a href="{{ url_for('Introduccion', paso=2) }}">
+            <button class="boton">Siguiente</button>
+        </a>
+    </div>
+    </div>
+</body>
+</html>

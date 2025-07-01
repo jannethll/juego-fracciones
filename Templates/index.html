@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Rueda Fracciona</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stile.css') }}">
+</head>
+<body>
+    <h1> Rueda Fraccionaria</h1>
+    <p>Ubica la rueda fraccionada en el lugar correcto de la línea numérica.</p>
+
+    <canvas id="juegoCanvas" width="800" height="500"></canvas>
+
+    <div class="control">
+        <input type="number" step="0.01" min="0" max="1" id="respuesta" placeholder="Ej: 0.75">
+        <button onclick="verificarRespuesta()">Verificar</button>
+    </div>
+
+    <p id="resultado"></p>
+
+    <script src="{{ url_for('static', filename='js/game.js') }}"></script>
+</body>
+</html>

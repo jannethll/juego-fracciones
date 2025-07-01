@@ -1,0 +1,41 @@
+body.intro-fondo {
+    background: url('../img/s.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.intro-card {
+    background: rgba(149, 95, 95, 0.85); /* blanco translúcido */
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+}
+
+.intro-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.boton {
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: darkorange;
+}

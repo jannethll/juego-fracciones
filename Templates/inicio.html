@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Jungla del Saber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inicio.css') }}">
+</head>
+<body>
+    <div class="menu">
+        <span class="logo">GAME ONLINE</span>
+        <nav>
+    <a href="/inicio" class="{% if active == 'home' %}active{% endif %}">Home</a>
+    <a href="/about" class="{% if active == 'about' %}active{% endif %}">About</a>
+    <a href="/contact" class="{% if active == 'contact' %}active{% endif %}">Contact</a>
+</nav>
+
+    </div>
+
+    <div class="contenido">
+        <div class="texto-central">
+            <div class="descripcion">
+                Bienvenidos a la jungla del saber, en este recorrido nos acompañará nuestro amigo Totoro 🌿
+            </div>
+                <a class="jugar-btn" href="{{ url_for('Introduccion', paso=1) }}">JUGAR</a>
+        </div>
+
+        <div class="imagen-personaje" id="totoro-estatico">
+            <img src="{{ url_for('static', filename='img/Tot.gif') }}" alt="Totoro">
+        </div>
+        <img id="totoro-corriendo" src="{{ url_for('static', filename='img/4.png') }}" alt="Totoro corriendo">
+
+    </div>
+
+    <div class="flechas">
+        <button class="izquierda">◀</button>
+        <button class="derecha">▶</button>
+    </div>
+    <div class="hojas">
+    <img src="{{ url_for('static', filename='img/hoja.webp') }}" class="hoja hoja1">
+    <img src="{{ url_for('static', filename='img/hoja.webp') }}" class="hoja hoja2">
+    <img src="{{ url_for('static', filename='img/hoja.webp') }}" class="hoja hoja3">
+</div>
+<script>
+    document.querySelector('.jugar-btn').addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const totoroEstatico = document.getElementById('totoro-estatico');
+        const totoroCorriendo = document.getElementById('totoro-corriendo');
+
+        if (totoroEstatico && totoroCorriendo) {
+            totoroEstatico.style.display = 'none';
+            totoroCorriendo.style.display = 'block';
+
+       setTimeout(() => {
+        window.location.href = "/Introduccion/1";
+        }, 2500);
+
+
+        } else {
+            console.error('No se encontró uno de los elementos Totoro.');
+        }
+    });
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Jungla del Saber</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inicio.css') }}">
+</head>
+<body>
+    <div class="menu">
+        <span class="logo">GAME ONLINE</span>
+        <nav>
+            <a href="/inicio" class="{% if active == 'home' %}active{% endif %}">Home</a>
+            <a href="/about" class="{% if active == 'about' %}active{% endif %}">About</a>
+            <a href="/contact" class="{% if active == 'contact' %}active{% endif %}">Contact</a>
+        </nav>
+    </div>
+
+    <div class="contenido">
+        <h1>Sobre este juego</h1>
+        <p>Este juego fue diseñado para niños de 3° y 4° grado para aprender fracciones en un entorno divertido.</p>
+    <h1>Contáctanos</h1>
+<p>Puedes escribirnos a jungladelsaber@ejemplo.com</p>
+
+    </div>
+</body>
+</html>

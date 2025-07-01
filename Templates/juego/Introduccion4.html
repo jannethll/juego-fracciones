@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/inicio.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stile.css') }}">
+</head>
+<body class="menu-fondo">
+    <div class="contenedor">
+        <div class="tarjeta">
+            <h2 class="titulo">Sumar</h2>
+            <div class="cuerpo">
+                <img src="{{ url_for('static', filename='img/totoro.gif') }}" alt="Sumar">
+            </div>
+            <div class="pie"><a href="#">Ir</a></div>
+        </div>
+        <div class="tarjeta">
+            <h2 class="titulo">Restar</h2>
+            <div class="cuerpo">
+                <img src="{{ url_for('static', filename='img/totoro.gif') }}" alt="Restar">
+            </div>
+            <div class="pie"><a href="#">Ir</a></div>
+        </div>
+        <div class="tarjeta">
+            <h2 class="titulo">Multiplicar</h2>
+            <div class="cuerpo">
+                <img src="{{ url_for('static', filename='img/totoro.gif') }}" alt="Multiplicar">
+            </div>
+            <div class="pie"><a href="#">Ir</a></div>
+        </div>
+        <div class="tarjeta">
+            <h2 class="titulo">Dividir</h2>
+            <div class="cuerpo">
+                <img src="{{ url_for('static', filename='img/totoro.gif') }}" alt="Dividir">
+            </div>
+            <div class="pie"><a href="#">Ir</a></div>
+        </div>
+        <div class="tarjeta">
+            <h2 class="titulo">Teoría</h2>
+            <div class="cuerpo">
+                <img src="{{ url_for('static', filename='img/totoro.gif') }}" alt="Teoría">
+            </div>
+            <div class="pie"><a href="#">Ir</a></div>
+        </div>
+        <div class="tarjeta">
+            <h2 class="titulo">Ajustes</h2>
+            <div class="cuerpo">
+                <img src="{{ url_for('static', filename='img/totoro.gif') }}" alt="Ajustes">
+            </div>
+            <div class="pie"><a href="#">Ir</a></div>
+        </div>
+    </div>
+</body>
+</html>
